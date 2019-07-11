@@ -6,7 +6,7 @@ signInButton.addEventListener("click", async () => {
 });
 
 async function getCustomers() {
-  const response = await fetch("http://localhost:3001/customers", {
+  const response = await fetch("/customers", {
     mode: "cors",
     headers: {
       Authorization: `Bearer ${auth0Client.getAccessToken()}`
@@ -17,7 +17,7 @@ async function getCustomers() {
 }
 
 async function addCustomer(customerName) {
-  const response = await fetch("http://localhost:3001/customers", {
+  const response = await fetch("/customers", {
     method: "POST",
     mode: "cors",
     body: JSON.stringify({ name: customerName }),
@@ -55,7 +55,7 @@ async function displayCustomerDetails() {
 }
 
 async function authorizeUser() {
-  const response = await fetch("http://localhost:3001/authorize", {
+  const response = await fetch("/authorize", {
     method: "POST",
     mode: "cors",
     headers: {
