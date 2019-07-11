@@ -9,7 +9,7 @@ class Auth0Client {
       domain: "gson007.auth0.com",
       audience: "https://api.manager.com/customer",
       clientID: "3K1tdQ9sHKgKgxb4i7wf2Wb2M9v4LmPp",
-      redirectUri: "http://localhost:3001/",
+      redirectUri: "https://auth0-rbac.herokuapp.com/",
       responseType: "token id_token",
       scope: "openid profile"
     });
