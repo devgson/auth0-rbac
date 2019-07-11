@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Auth0 Role Based Access Control</title>
+  </head>
+  <body class="h-100">
+    <div class="container-fluid row d-flex dlex-column h-100">
+      <div class="col-md-2 bg-dark">
+        <div class="row tex-white">
+          <div class="d-flex flex-column col-12 p-2">
+            <div
+              id="profile"
+              class="font-weight-bold p-2 mb-3 rounded text-center"
+            ></div>
+            <button id="sign-in" type="button" class="btn">Sign In</button>
+          </div>
+        </div>
+      </div>
+      <div class="main col-md-10 bg-primary"></div>
+    </div>
+    <script src="https://cdn.auth0.com/js/auth0/9.7.3/auth0.min.js"></script>
+    <script src="auth0.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
